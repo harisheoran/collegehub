@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">College Hub</string>
+    <string name="pkg">Packaging Technology</string>
+    <string name="ptg">Printing Technology</string>
+    <string name="cse">Computer Science</string>
+    <string name="cse_ai">Artificial Intelligence</string>
+    <string name="it">Information Technology</string>
+    <string name="mech">Mechanical Engineering</string>
+    <string name="food">Food Technology</string>
+    <string name="civil">Civil Engineering</string>
+    <string name="ece">Electronics and Communication</string>
+    <string name="ec">Electrical Engineering</string>
+</resources>
