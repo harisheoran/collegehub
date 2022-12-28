@@ -10,7 +10,10 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.collegehub.data.DepartmentList
-import com.example.collegehub.ui.MainUIList
+
+import com.example.collegehub.ui.Home
+import com.example.collegehub.ui.MainScreen
+
 import com.example.collegehub.ui.theme.CollegeHubTheme
 
 class MainActivity : ComponentActivity() {
@@ -29,13 +32,13 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun CollegeHub(){
-    MainUIList(DepartmentList.deptsList)
+    MainScreen()
 }
 
 @Preview(showBackground = true, showSystemUi = true)
 @Composable
 fun DefaultPreview() {
-    CollegeHubTheme {9
+    CollegeHubTheme {
         CollegeHub()
     }
 }
