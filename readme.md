@@ -2,6 +2,8 @@
 
 Beta Version code([dev branch](https://github.com/harisheoran/collegehub/tree/dev))
 
+
+---
 Tech Stack 
 - Jetpack Compose
 - Kotlin
@@ -10,3 +12,4 @@ Tech Stack
 
 Third Party Libraries
 - RetroFit
+---
