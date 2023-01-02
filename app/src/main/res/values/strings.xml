@@ -2,6 +2,7 @@
     <string name="app_name">College Hub</string>
     <string name="whatsNew">What\'s new for you</string>
     <string name="dept">Deptarment</string>
+    <string name="subjects">Subjects</string>
     <string name="pkg">Packaging Technology</string>
     <string name="ptg">Printing Technology</string>
     <string name="cse">Computer Science</string>
@@ -12,13 +13,18 @@
     <string name="civil">Civil Engineering</string>
     <string name="ece">Electronics and Communication</string>
     <string name="ec">Electrical Engineering</string>
-    <!-- Subjects name strings -->
+
+    <!-- 1st year Subjects name strings -->
     <string name="math">Mathematics</string>
     <string name="physics">Physics</string>
     <string name="chemistry">Chemistry</string>
     <string name="bee">BEE</string>
     <string name="english">English</string>
+    <string name="workshop">Workshop</string>
+
     <string name="title_activity_department_screen">DepartmentScreen</string>
+
+
     <!--Semesters-->
     <string name="semester">Semester</string>
     <string name="semesterDetails">Sem Details</string>
@@ -31,4 +37,4 @@
     <string name="sixthsem">6th Semester</string>
     <string name="seventhsem">7th Semester</string>
     <string name="eigthsem">8th Semester</string>
-    </resources>
+</resources>

@@ -16,26 +16,25 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavController
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
 import com.example.collegehub.R
 import com.example.collegehub.components.CardDivider
 import com.example.collegehub.data.DepartmentList
+import com.example.collegehub.model.CollegeHubViewModel
 import com.example.collegehub.model.Department
 import com.example.collegehub.ui.theme.CollegeHubTheme
 
-// Main UI, Scrollable list
+// Main UI, Scrollable list of Departments
 @Composable
-fun Home(list: List<Department>, navController: NavHostController) {
-    Scaffold(topBar = {
-        AppTopBar(modifier = Modifier.padding(bottom = 4.dp), R.string.app_name)
-    }) { innerpadding ->
-        LazyColumn(modifier = Modifier.padding(innerpadding).fillMaxSize()) {
-            item { InfoUpdateCard(navController) }
-            item {
-                DepartmentCard(list, navController)
-            }
+fun Home(list: List<Department>, navController: NavHostController, viewModel: CollegeHubViewModel) {
+
+    LazyColumn(modifier = Modifier.fillMaxSize()) {
+        item { InfoUpdateCard(navController) }
+        item {
+            DepartmentCard(list, navController, viewModel)
         }
     }
 }
@@ -43,21 +42,22 @@ fun Home(list: List<Department>, navController: NavHostController) {
 // cards used in Main UI in Scrollable list
 @OptIn(ExperimentalMaterialApi::class)
 @Composable
-fun DepartmentCard(list: List<Department>, navController: NavHostController) {
+fun DepartmentCard(list: List<Department>, navController: NavHostController, viewModel: CollegeHubViewModel) {
     Column {
         list.forEach {
-            SimpleCards(it, navController)
+            SimpleCards(it, navController, viewModel)
         }
     }
 }
 
 @Composable
-fun SimpleCards(dept: Department, navController: NavHostController) {
+fun SimpleCards(dept: Department, navController: NavHostController, viewModel: CollegeHubViewModel) {
     Row(modifier = Modifier
         .fillMaxWidth()
         .padding(start = 8.dp, end = 8.dp)
         .clickable {
-            navController.navigate("${MainRoutes.Details.name}/${dept.id}/${dept.deptName}")
+            navController.navigate(MainRoutes.Semesters.name)
+            viewModel.updateDepartmentId(dept.id)
         }) {
         Image(
             painterResource(dept.deptImg), contentDescription = null,
@@ -73,18 +73,6 @@ fun SimpleCards(dept: Department, navController: NavHostController) {
     }
 }
 
-// Main UI Top App Bar
-@Composable
-fun AppTopBar(modifier: Modifier, @StringRes text: Int) {
-    TopAppBar(
-        title = {
-            Text(stringResource(text), style = MaterialTheme.typography.h1)
-        },
-        modifier = modifier,
-        backgroundColor = MaterialTheme.colors.primary
-    )
-}
-
 @Composable
 fun InfoUpdateCard(navController: NavHostController) {
     Column(modifier = Modifier.padding(8.dp)
@@ -97,9 +85,9 @@ fun InfoUpdateCard(navController: NavHostController) {
             style = MaterialTheme.typography.h2
         )
         Image(
-            painterResource(id = R.drawable.cse), contentDescription = null,
+            painterResource(id = R.drawable.newforyou), contentDescription = null,
             modifier = Modifier.fillMaxWidth().padding(8.dp),
-            contentScale = ContentScale.Crop
+            contentScale = ContentScale.Fit
         )
         Text(
             text = "Sample Papers are available now.",
@@ -107,14 +95,5 @@ fun InfoUpdateCard(navController: NavHostController) {
             style = MaterialTheme.typography.h3
         )
         CardDivider()
-    }
-}
-
-
-@Preview(showSystemUi = true, showBackground = true)
-@Composable
-fun AppMainUIPreview() {
-    CollegeHubTheme(darkTheme = false) {
-        Home(DepartmentList.deptsList, navController = rememberNavController())
     }
 }

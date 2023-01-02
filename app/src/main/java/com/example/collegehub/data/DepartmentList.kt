@@ -39,13 +39,13 @@ object DepartmentList {
         Department(
             R.string.civil,
             R.drawable.civil,
-            SemestersList.pkgSemestersList,
+            SemestersList.civilSemesterList,
             6
         ),
         Department(
             R.string.ece,
             R.drawable.eceandcomm,
-            SemestersList.pkgSemestersList,
+            SemestersList.electronicsSemesterList,
             7
         ),
         Department(

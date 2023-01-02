@@ -2,58 +2,77 @@ package com.example.collegehub.ui
 
 import androidx.annotation.StringRes
 import androidx.compose.foundation.layout.padding
-import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Scaffold
-import androidx.compose.material.Text
-import androidx.compose.material.TopAppBar
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.res.stringResource
-import androidx.compose.ui.unit.dp
+import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavHostController
-import androidx.navigation.NavType
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
-import androidx.navigation.navArgument
 import com.example.collegehub.R
+import com.example.collegehub.components.CollegeHubBar
 import com.example.collegehub.data.DepartmentList
+import com.example.collegehub.model.CollegeHubViewModel
 
-import com.example.collegehub.ui.semesters.SemesterMainScreen
-
-enum class MainRoutes {
-    Home,
-    Details,
-    NewInfo
+// all Routes
+enum class MainRoutes(@StringRes val title: Int) {
+    Home(title = R.string.app_name),
+    Semesters(R.string.chooseSem),
+    NewInfo(R.string.whatsNew),
+    Subjects(R.string.subjects)
 }
 
+// Main Entry of app + Navigation setup
 @Composable
 fun MainScreen() {
     val navController: NavHostController = rememberNavController()
     var departmentList = DepartmentList.deptsList
+    //create viewmodel
+    val viewModel: CollegeHubViewModel = viewModel()
+    val uiState by viewModel.uistate.collectAsState()
 
-    NavHost(
-        navController = navController,
-        startDestination = MainRoutes.Home.name,
-        modifier = Modifier
-    ) {
-        // Home Screen
-        composable(route = MainRoutes.Home.name) {
-            Home(list = departmentList, navController)
-        }
+    val backStackEntry by navController.currentBackStackEntryAsState()
+    val currentScreen = MainRoutes.valueOf(
+        backStackEntry?.destination?.route ?: MainRoutes.Home.name
+    )
 
-        composable(route = MainRoutes.NewInfo.name) {
-            NewInfo()
-        }
-
-        // Semester List screen
-        composable(
-            route = "${MainRoutes.Details.name}/{id}/{name}",
-            arguments = listOf(navArgument("id") { type = NavType.IntType })
+    Scaffold(topBar = {
+        CollegeHubBar(modifier = Modifier,
+            barText = currentScreen.title,
+            canGoBack = navController.previousBackStackEntry != null,
+            currentScreen = currentScreen,
+            navigateUp = { navController.navigateUp() })
+    }) {
+        NavHost(
+            navController = navController,
+            startDestination = MainRoutes.Home.name,
+            modifier = Modifier.padding(it)
         ) {
-            SemesterMainScreen(departmentList, it.arguments?.getInt("id") ?: 0)
+            // Home Screen
+            composable(route = MainRoutes.Home.name) {
+                Home(list = departmentList, navController, viewModel)
+            }
+            // New Info section
+            composable(route = MainRoutes.NewInfo.name) {
+                NewInfo()
+            }
+
+            // Semester List screen
+            composable(route = MainRoutes.Semesters.name) {
+                var semesterListOfDepartment = departmentList[uiState.departmentId].semestersList
+                SemesterListScreen(semesterListOfDepartment, navController, viewModel)
+            }
+
+            // subject list screen of a particular semester
+            composable(route = MainRoutes.Subjects.name) {
+                var subjectListOfDepartment =
+                    departmentList[uiState.departmentId].semestersList[uiState.semesterNum].subjectList
+                SubjectsListScreen(subjectListOfDepartment)
+            }
         }
     }
 }

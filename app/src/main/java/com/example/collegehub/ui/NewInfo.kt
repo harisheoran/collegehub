@@ -13,5 +13,4 @@ fun NewInfo(){
     Column {
         Text(text = "Sample papers are available.")
     }
-
 }
