@@ -6,9 +6,6 @@ import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.collegehub.data.Subjects
-import com.example.collegehub.model.Subject
-import com.example.collegehub.ui.MainAdapter
 
 class MainActivity : AppCompatActivity() {
     private lateinit var navController: NavController

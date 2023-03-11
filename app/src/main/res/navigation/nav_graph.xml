@@ -1,16 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:app="http://schemas.android.com/apk/res-auto"
-            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/nav_main"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/nav_graph"
             app:startDestination="@id/mainScreen">
 
     <fragment android:id="@+id/mainScreen" android:name="com.example.collegehub.ui.MainScreen"
               android:label="fragment_main_screen" tools:layout="@layout/fragment_main_screen">
-        <action android:id="@+id/action_mainScreen_to_subject_Screen" app:destination="@id/subject_Screen"/>
+        <action android:id="@+id/action_mainScreen_to_notesListScreen" app:destination="@id/notesListScreen"/>
     </fragment>
-    <fragment android:id="@+id/subject_Screen" android:name="com.example.collegehub.ui.Subject_Screen"
-              android:label="fragment_subject__screen" tools:layout="@layout/fragment_subject__screen">
-        <action android:id="@+id/action_subject_Screen_to_mainScreen" app:destination="@id/mainScreen"
+    <fragment android:id="@+id/notesListScreen" android:name="com.example.collegehub.ui.NotesListScreen"
+              android:label="fragment_notes_list_screen" tools:layout="@layout/fragment_notes_list_screen">
+        <action android:id="@+id/action_notesListScreen_to_mainScreen" app:destination="@id/mainScreen"
                 app:popUpTo="@id/mainScreen"/>
+        <action android:id="@+id/action_notesListScreen_to_notes_Pdf_view_screen"
+                app:destination="@id/notes_Pdf_view_screen"/>
+    </fragment>
+    <fragment android:id="@+id/notes_Pdf_view_screen" android:name="com.example.collegehub.ui.Notes_Pdf_view_screen"
+              android:label="Notes_Pdf_view_screen">
+        <action android:id="@+id/action_notes_Pdf_view_screen_to_notesListScreen"
+                app:destination="@id/notesListScreen" app:popUpTo="@id/notesListScreen"/>
     </fragment>
 </navigation>

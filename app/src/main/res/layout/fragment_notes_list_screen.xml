@@ -2,24 +2,22 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
         xmlns:app="http://schemas.android.com/apk/res-auto">
     <data>
-        <variable name="viewmodel" type="com.example.collegehub.model.HubViewModel"/>
+        <variable name="viewModel" type="com.example.collegehub.model.HubViewModel"/>
     </data>
+
     <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             tools:context=".ui.MainScreen">
 
-        <!-- TODO: Update blank fragment layout -->
-
-
         <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/subject_recycler_view"
+                android:id="@+id/chapter_recycler_view"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scrollbars="vertical"
                 app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
                 app:spanCount="2"
-                app:setData="@{viewmodel.subject}"
+                app:setChapter="@{viewModel.chapter}"
         />
 
     </FrameLayout>

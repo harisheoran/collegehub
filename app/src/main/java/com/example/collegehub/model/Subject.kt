@@ -1,5 +1,6 @@
 package com.example.collegehub.model
 
+import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
 
-data class Subject(@StringRes val name:Int)
+class Subject(@StringRes val name: Int, @DrawableRes val img: Int)
