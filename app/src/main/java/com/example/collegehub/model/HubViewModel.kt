@@ -5,6 +5,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.collegehub.data.Chapters
+import com.example.collegehub.data.MainDetails
 import com.example.collegehub.data.Subjects
 import kotlinx.coroutines.launch
 
@@ -15,15 +16,19 @@ class HubViewModel : ViewModel() {
     private val _chapter = MutableLiveData<List<Chapter>>()
     val chapter: LiveData<List<Chapter>> = _chapter
 
+    private val _mainDetails = MutableLiveData<List<MainDetail>>()
+    val mainDetails :LiveData<List<MainDetail>> = _mainDetails
+
     init {
-        getSubjectList()
+        getList()
     }
 
 
-    private fun getSubjectList() {
+    private fun getList() {
         viewModelScope.launch {
             _subject.value = Subjects().loadSubjectList()
             _chapter.value = Chapters().loadChapter()
+            _mainDetails.value = MainDetails().loadMainDetails()
         }
     }
 }

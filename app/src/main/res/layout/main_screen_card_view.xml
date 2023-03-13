@@ -10,7 +10,6 @@
             android:layout_height="wrap_content"
             app:cardElevation="10dp"
             app:cardCornerRadius="20dp"
-            app:cardBackgroundColor="@color/white"
             app:cardMaxElevation="12dp"
             app:cardPreventCornerOverlap="true"
             app:cardUseCompatPadding="true"
@@ -20,21 +19,12 @@
                       android:orientation="vertical"
                       android:layout_height="match_parent">
 
-            <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:layout_gravity="center"
-                    android:src="@{subject.img}"
-                    android:layout_margin="10dp"
-                    android:id="@+id/img"
-                    android:contentDescription="@string/app_name"/>
-
             <TextView
                     android:id="@+id/subject_title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@{subject.name}"
-                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:layout_marginBottom="20dp"
                     android:textSize="20sp"

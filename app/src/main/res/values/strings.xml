@@ -8,4 +8,8 @@
     <string name="chemistry">Chemistry</string>
     <string name="chapter">Chapter No.</string>
     <string name="hello_blank_fragment">Hello blank</string>
+    <string name="new_info">Whats New</string>
+    <string name="news">News</string>
+    <string name="about_app">About Us</string>
+    <string name="contact_us">Contact Us</string>
 </resources>

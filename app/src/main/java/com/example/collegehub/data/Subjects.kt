@@ -19,16 +19,17 @@ class Subjects {
         Subject(R.string.bee, R.drawable.bee),
         Subject(R.string.chemistry, R.drawable.common),
         Subject(R.string.physics, R.drawable.physics),
-        Subject(R.string.eng, R.drawable.common),
-        Subject(R.string.math, R.drawable.math),
+        Subject(R.string.eng, R.drawable.common),Subject(R.string.math, R.drawable.math),
+        Subject(R.string.bee, R.drawable.bee),
+        Subject(R.string.chemistry, R.drawable.common),
+        Subject(R.string.physics, R.drawable.physics),
+        Subject(R.string.eng, R.drawable.common),Subject(R.string.math, R.drawable.math),
         Subject(R.string.bee, R.drawable.bee),
         Subject(R.string.chemistry, R.drawable.common),
         Subject(R.string.physics, R.drawable.physics),
         Subject(R.string.eng, R.drawable.common),
-        Subject(R.string.math, R.drawable.math),
-        Subject(R.string.bee, R.drawable.bee),
-        Subject(R.string.chemistry, R.drawable.common),
-        Subject(R.string.physics, R.drawable.physics),
-        Subject(R.string.eng, R.drawable.common),
+
+
+
     )
 }
