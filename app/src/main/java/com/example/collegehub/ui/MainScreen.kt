@@ -24,7 +24,6 @@ class MainScreen : Fragment() {
         binding.subjectRecyclerView.adapter = SubjectsAdapter(ClickBehaviour {subject: Subject ->
             findNavController().navigate(R.id.action_mainScreen_to_notesListScreen)
         })
-        binding.detailsRecycletrView.adapter = MainDetailsAdapter()
         binding.viewmodel = viewModel
         return binding.root
     }

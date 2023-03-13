@@ -5,7 +5,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.collegehub.model.Chapter
 import com.example.collegehub.model.MainDetail
 import com.example.collegehub.model.Subject
-import com.example.collegehub.ui.MainDetailsAdapter
+
 import com.example.collegehub.ui.NotesAdapter
 import com.example.collegehub.ui.SubjectsAdapter
 
@@ -18,11 +18,5 @@ fun bindRecyclerView(recyclerView: RecyclerView, data: List<Subject>?){
 @BindingAdapter("setChapter")
 fun bindChapterRecyclerView(recyclerView: RecyclerView, data: List<Chapter>?){
     val adapter = recyclerView.adapter as NotesAdapter
-    adapter.submitList(data)
-}
-
-@BindingAdapter("setMainDetails")
-fun bindMainDetailsRecyclerView(recyclerView: RecyclerView, data: List<MainDetail>){
-    val adapter = recyclerView.adapter as MainDetailsAdapter
     adapter.submitList(data)
 }

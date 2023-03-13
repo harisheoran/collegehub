@@ -4,20 +4,26 @@
             xmlns:tools="http://schemas.android.com/tools" android:id="@+id/nav_graph"
             app:startDestination="@id/mainScreen">
 
-    <fragment android:id="@+id/mainScreen" android:name="com.example.collegehub.ui.MainScreen"
-              android:label="fragment_main_screen" tools:layout="@layout/fragment_main_screen">
+    <fragment android:id="@+id/mainScreen"
+              android:name="com.example.collegehub.ui.MainScreen"
+              android:label="@string/app_name"
+              tools:layout="@layout/fragment_main_screen">
         <action android:id="@+id/action_mainScreen_to_notesListScreen" app:destination="@id/notesListScreen"/>
     </fragment>
-    <fragment android:id="@+id/notesListScreen" android:name="com.example.collegehub.ui.NotesListScreen"
-              android:label="fragment_notes_list_screen" tools:layout="@layout/fragment_notes_list_screen">
+
+    <fragment android:id="@+id/notesListScreen"
+              android:name="com.example.collegehub.ui.NotesListScreen"
+              tools:layout="@layout/fragment_notes_list_screen" android:label="@string/notes">
         <action android:id="@+id/action_notesListScreen_to_mainScreen" app:destination="@id/mainScreen"
-                app:popUpTo="@id/mainScreen"/>
+                app:popUpTo="@id/mainScreen" app:popUpToInclusive="true"/>
         <action android:id="@+id/action_notesListScreen_to_notes_Pdf_view_screen"
                 app:destination="@id/notes_Pdf_view_screen"/>
     </fragment>
-    <fragment android:id="@+id/notes_Pdf_view_screen" android:name="com.example.collegehub.ui.Notes_Pdf_view_screen"
-              android:label="Notes_Pdf_view_screen">
+
+    <fragment android:id="@+id/notes_Pdf_view_screen"
+              android:name="com.example.collegehub.ui.Notes_Pdf_view_screen"
+              android:label="@string/pdf">
         <action android:id="@+id/action_notes_Pdf_view_screen_to_notesListScreen"
-                app:destination="@id/notesListScreen" app:popUpTo="@id/notesListScreen"/>
+                app:destination="@id/notesListScreen" app:popUpTo="@id/notesListScreen" app:popUpToInclusive="true"/>
     </fragment>
 </navigation>
