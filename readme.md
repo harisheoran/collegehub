@@ -2,6 +2,6 @@
 
 view beta version [here](https://github.com/harisheoran/collegehub/tree/beta)
 
-Native Android tech Stack
+Tech Stack
 - Kotlin
 - Firebase Cloud Firestore
