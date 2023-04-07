@@ -6,5 +6,6 @@ Tech Stack
 - Kotlin
 - Firebase Cloud Firestore
 
-MVP Mockup
-![mockups](mockups/college hub.jpg)
+Here is our MVP Mockup
+![alt text](https://github.com/harisheoran/collegehub/blob/main/mockups/college%20hub.jpg)
+
