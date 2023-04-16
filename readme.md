@@ -1,4 +1,4 @@
-### College Hub App
+## College Hub App
 
 ### Here is our MVP Mockup
 
