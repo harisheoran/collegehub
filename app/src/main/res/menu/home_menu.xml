@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/userProfileScreen"
+        android:icon="@drawable/account_28"
+        android:title="User Profile"
+        app:showAsAction="ifRoom" />
+</menu>
