@@ -48,5 +48,7 @@ dependencies {
     implementation("androidx.navigation:navigation-ui-ktx:$nav_version")
     // Feature module Support
     implementation("androidx.navigation:navigation-dynamic-features-fragment:$nav_version")
-
+    implementation "androidx.viewpager2:viewpager2:1.0.0"
+    implementation "me.relex:circleindicator:2.1.6"
+    implementation "com.airbnb.android:lottie:6.0.0"
 }

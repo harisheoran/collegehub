@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/login"
+            app:startDestination="@id/onBoardingScreen2">
+
+
+    <fragment android:id="@+id/onBoardingScreen2" android:name="com.example.collegehub_beta.ui.login.OnBoardingScreen"
+              android:label="OnBoardingScreen">
+        <action android:id="@+id/action_onBoardingScreen2_to_loginScreen2" app:destination="@id/loginScreen2"
+                app:popUpTo="@id/onBoardingScreen2"/>
+    </fragment>
+    <fragment android:id="@+id/loginScreen2" android:name="com.example.collegehub_beta.ui.login.LoginScreen"
+              android:label="fragment_login_screen" tools:layout="@layout/fragment_login_screen"/>
+</navigation>

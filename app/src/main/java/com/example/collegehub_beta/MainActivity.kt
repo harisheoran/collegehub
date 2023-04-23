@@ -17,6 +17,7 @@ import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.onNavDestinationSelected
 import androidx.navigation.ui.setupActionBarWithNavController
 import com.example.collegehub_beta.databinding.ActivityMainBinding
+import com.example.collegehub_beta.ui.profile.UserProfileEditScreen
 
 class MainActivity : AppCompatActivity() {
     private lateinit var navController: NavController
@@ -47,6 +48,7 @@ class MainActivity : AppCompatActivity() {
         menuInflater.inflate(R.menu.home_menu, menu)
         return true
     }
+
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return item.onNavDestinationSelected(
