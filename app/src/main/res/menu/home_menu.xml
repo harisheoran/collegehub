@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
-
+        xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/userProfileScreen"
-        android:icon="@drawable/account_28"
-        android:title="User Profile"
-        app:showAsAction="ifRoom" />
+            android:id="@+id/home"
+            android:icon="@drawable/home_28"
+            android:title="Home" />
+    <item
+            android:id="@+id/offline"
+            android:icon="@drawable/offline_28"
+            android:title="Offline Content" />
+    <item
+            android:id="@+id/profile"
+            android:icon="@drawable/account_28"
+            android:title="Profile" />
+
 </menu>

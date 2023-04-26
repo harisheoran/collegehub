@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/profile"
+        app:startDestination="@id/userProfileScreen">
+
+    <fragment
+            android:id="@+id/userProfileScreen"
+            android:name="com.example.collegehub_beta.ui.profile.UserProfileScreen"
+            android:label="Profile" >
+        <action
+                android:id="@+id/action_userProfileScreen_to_userProfileEditScreen"
+                app:destination="@id/userProfileEditScreen"
+                app:popUpTo="@id/userProfileScreen" />
+    </fragment>
+    <fragment
+            android:id="@+id/userProfileEditScreen"
+            android:name="com.example.collegehub_beta.ui.profile.UserProfileEditScreen"
+            android:label="Edit Profile"
+            tools:layout="@layout/fragment_user_profile_edit_screen" />
+</navigation>
