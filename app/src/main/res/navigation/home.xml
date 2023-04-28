@@ -19,5 +19,15 @@
         android:id="@+id/chapterScreen"
         android:name="com.example.collegehub_beta.ui.home.ChapterScreen"
         android:label="Chapters"
-        tools:layout="@layout/fragment_chapter_screen" />
+        tools:layout="@layout/fragment_chapter_screen" >
+        <action
+                android:id="@+id/action_chapterScreen_to_PDFViewScreen"
+                app:destination="@id/PDFViewScreen"
+                app:popUpTo="@id/chapterScreen" />
+    </fragment>
+    <fragment
+            android:id="@+id/PDFViewScreen"
+            android:name="com.example.collegehub_beta.ui.home.PDFViewScreen"
+            android:label="fragment_p_d_f_view_screen"
+            tools:layout="@layout/fragment_p_d_f_view_screen" />
 </navigation>

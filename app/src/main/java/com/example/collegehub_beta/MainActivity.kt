@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
 
         appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.homeScreen, R.id.userProfileScreen, R.id.onBoardingScreen2
+                R.id.homeScreen, R.id.userProfileScreen
             )
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
