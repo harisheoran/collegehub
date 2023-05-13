@@ -46,8 +46,6 @@ class UserLoginScreen : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-
-
         val departmentList = DepartmentAndSemesterNameList.departmentList()
         val semesterList = DepartmentAndSemesterNameList.semesterList()
 

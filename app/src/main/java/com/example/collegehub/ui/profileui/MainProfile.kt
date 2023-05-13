@@ -65,31 +65,27 @@ class MainProfile : Fragment() {
     private fun additionalInfoIntents() {
         // Contact Us
         binding.contact.setOnClickListener {
-            val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://collegehub.pages.dev/"))
+            val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://collegehub.pages.dev"))
             startActivity(intent)
         }
 
         // Help Centre
         binding.helpCentre.setOnClickListener {
             val intent =
-                Intent(Intent.ACTION_VIEW, Uri.parse(""))
+                Intent(Intent.ACTION_VIEW, Uri.parse("https://collegehub.pages.dev/helpcenter"))
             startActivity(intent)
         }
 
-
         // About Us
         binding.aboutUs.setOnClickListener {
-            binding.privacyPolicy.setOnClickListener {
-                val intent =
-                    Intent(Intent.ACTION_VIEW, Uri.parse(""))
-                startActivity(intent)
-            }
+            val intent =
+                Intent(Intent.ACTION_VIEW, Uri.parse("https://collegehub.pages.dev/#footer"))
+            startActivity(intent)
         }
 
-        // Terms & Privacy Policy
-        binding.privacyPolicy.setOnClickListener {
-            val intent =
-                Intent(Intent.ACTION_VIEW, Uri.parse("https://collegehub.pages.dev/privacypolicy"))
+        // check update
+        binding.update.setOnClickListener {
+            val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://collegehub.pages.dev/"))
             startActivity(intent)
         }
     }

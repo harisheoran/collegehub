@@ -73,4 +73,5 @@
     <string name="policy">Terms and Privacy Policy</string>
     <string name="app_version">App Version</string>
     <string name="version_number">v.1.0.0</string>
+    <string name="update_app">Check Update</string>
 </resources>

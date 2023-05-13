@@ -9,13 +9,10 @@
             android:id="@+id/mainProfile"
             android:name="com.example.collegehub.ui.profileui.MainProfile"
             android:label="@string/profile">
-
         <action
                 android:id="@+id/action_mainProfile_to_profileEdit2"
                 app:destination="@id/profileEdit">
         </action>
-
-
     </fragment>
 
     <fragment
@@ -25,7 +22,8 @@
             tools:layout="@layout/fragment_profile_edit">
         <argument android:name="id"
                   app:argType="integer"/>
-        <action android:id="@+id/action_profileEdit_to_mainProfile" app:popUpTo="@id/mainProfile"/>
+        <action android:id="@+id/action_profileEdit_to_mainProfile"
+                app:popUpTo="@id/mainProfile"/>
     </fragment>
 
 </navigation>
