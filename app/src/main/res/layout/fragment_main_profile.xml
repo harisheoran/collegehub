@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="74dp"
+                    android:orientation="horizontal">
+
+                <ImageView
+                        style="@style/profile_section_image_view"
+                        android:src="@drawable/account_28" />
+
+                <TextView
+                        android:id="@+id/user_name"
+                        style="@style/profile_section_title_view"
+                        tools:text="Pintu Kumar" />
+
+                <TextView
+                        android:id="@+id/profile_edit"
+                        android:layout_weight="0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="16dp"
+                        android:textSize="20sp"
+                        android:textColor="@color/md_theme_dark_primary"
+                        android:layout_gravity="center_vertical"
+                        android:text="Edit Profile" />
+            </LinearLayout>
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/md_theme_dark_scrim" />
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="74dp"
+                    android:orientation="horizontal">
+
+                <ImageView
+                        android:src="@drawable/department_28"
+                        style="@style/profile_section_image_view" />
+
+                <TextView
+                        android:id="@+id/user_department"
+                        style="@style/profile_section_title_view"
+                        tools:text="Packaging Technogy" />
+            </LinearLayout>
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/md_theme_dark_scrim" />
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="74dp"
+                    android:orientation="horizontal">
+
+                <ImageView
+                        android:src="@drawable/semester_28"
+                        style="@style/profile_section_image_view" />
+
+                <TextView
+                        android:id="@+id/user_semester"
+                        style="@style/profile_section_title_view"
+                        tools:text="4th Semester" />
+            </LinearLayout>
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/md_theme_dark_scrim" />
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:orientation="horizontal"
+                    style="@style/ripple_effect"
+                    android:id="@+id/contact">
+
+                <TextView
+                        android:text="@string/contact"
+                        style="@style/profile_additional_section_text_view" />
+
+                <ImageView
+                        android:src="@drawable/arrow_blue_24"
+                        style="@style/profile_additional_section_image_view" />
+
+            </LinearLayout>
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/md_theme_dark_outline" />
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    style="@style/ripple_effect"
+                    android:id="@+id/help_centre"
+                    android:orientation="horizontal">
+
+                <TextView
+
+                        android:text="@string/help"
+                        style="@style/profile_additional_section_text_view" />
+
+                <ImageView
+                        android:src="@drawable/arrow_blue_24"
+                        style="@style/profile_additional_section_image_view" />
+
+            </LinearLayout>
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/md_theme_dark_outline" />
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    style="@style/ripple_effect"
+                    android:id="@+id/about_us"
+                    android:orientation="horizontal">
+
+                <TextView
+
+                        android:text="@string/about"
+                        style="@style/profile_additional_section_text_view" />
+
+                <ImageView
+                        android:src="@drawable/arrow_blue_24"
+                        style="@style/profile_additional_section_image_view" />
+
+            </LinearLayout>
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/md_theme_dark_outline" />
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:id="@+id/privacy_policy"
+                    style="@style/ripple_effect"
+                    android:orientation="horizontal">
+
+                <TextView
+
+                        android:text="@string/policy"
+                        style="@style/profile_additional_section_text_view" />
+
+                <ImageView
+                        android:src="@drawable/arrow_blue_24"
+                        style="@style/profile_additional_section_image_view" />
+
+            </LinearLayout>
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/md_theme_dark_outline" />
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    style="@style/ripple_effect"
+                    android:orientation="horizontal">
+
+                <TextView
+
+                        android:text="@string/app_version"
+                        style="@style/profile_additional_section_text_view" />
+
+                <ImageView
+                        android:src="@drawable/arrow_blue_24"
+                        style="@style/profile_additional_section_image_view" />
+
+            </LinearLayout>
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/md_theme_dark_scrim" />
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="74dp"
+                    style="@style/ripple_effect"
+                    android:orientation="horizontal">
+
+                <ImageView
+                        android:src="@drawable/logout_28"
+                        style="@style/profile_section_image_view" />
+
+                <TextView
+
+                        android:text="@string/logout"
+                        style="@style/profile_additional_section_text_view" />
+
+                <ImageView
+                        android:src="@drawable/arrow_blue_24"
+                        style="@style/profile_additional_section_image_view" />
+
+            </LinearLayout>
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/md_theme_dark_scrim" />
+        </LinearLayout>
+    </ScrollView>
+</layout>
