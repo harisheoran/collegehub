@@ -40,12 +40,12 @@
 
                         <ImageView
                                 style="@style/profile_section_image_view"
-                                android:src="@drawable/account_28" />
+                                android:src="@drawable/account_28"/>
 
                         <TextView
                                 android:id="@+id/user_name"
                                 style="@style/profile_section_title_view"
-                                tools:text="Pintu Kumar" />
+                                tools:text="Pintu Kumar"/>
 
                         <TextView
                                 android:id="@+id/profile_edit"
@@ -56,7 +56,7 @@
                                 android:textSize="20sp"
                                 android:textColor="@color/md_theme_dark_primary"
                                 android:layout_gravity="center_vertical"
-                                android:text="Edit Profile" />
+                                android:text="Edit Profile"/>
                     </LinearLayout>
 
                     <View
@@ -101,14 +101,16 @@
             </com.google.android.material.card.MaterialCardView>
 
 
-
-
             <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="64dp"
                     android:orientation="horizontal"
                     style="@style/ripple_effect"
                     android:id="@+id/contact">
+
+                <ImageView style="@style/profile_section_image_view"
+                           android:layout_marginLeft="12dp"
+                           android:src="@drawable/contact_28"/>
 
                 <TextView
                         android:text="@string/contact"
@@ -132,6 +134,10 @@
                     android:id="@+id/help_centre"
                     android:orientation="horizontal">
 
+                <ImageView style="@style/profile_section_image_view"
+                           android:layout_marginLeft="12dp"
+                           android:src="@drawable/help_center_28"/>
+
                 <TextView
 
                         android:text="@string/help"
@@ -154,6 +160,9 @@
                     style="@style/ripple_effect"
                     android:id="@+id/about_us"
                     android:orientation="horizontal">
+                <ImageView style="@style/profile_section_image_view"
+                           android:layout_marginLeft="12dp"
+                           android:src="@drawable/aboutus_28"/>
 
                 <TextView
 
@@ -199,6 +208,9 @@
                     android:layout_height="64dp"
                     style="@style/ripple_effect"
                     android:orientation="horizontal">
+                <ImageView style="@style/profile_section_image_view"
+                           android:layout_marginLeft="12dp"
+                           android:src="@drawable/contact_28"/>
 
                 <TextView
                         android:text="@string/app_version"
@@ -209,6 +221,7 @@
                         android:layout_weight="0"
                         android:textColor="@color/md_theme_light_shadow"
                         android:layout_height="wrap_content"
+                        android:layout_marginRight="8dp"
                         android:layout_width="wrap_content"
                         android:textSize="14sp"
                         android:layout_gravity="center_vertical"
@@ -232,6 +245,7 @@
 
                 <ImageView
                         android:src="@drawable/update_28"
+                        android:layout_marginLeft="12dp"
                         style="@style/profile_section_image_view"/>
 
                 <TextView
