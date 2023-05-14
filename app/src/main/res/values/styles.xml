@@ -17,7 +17,8 @@
     <style name="profile_section_title_view" parent="">
         <item name="android:paddingStart">16dp</item>
         <item name="android:textColor">@color/md_theme_light_shadow</item>
-        <item name="android:textSize">20sp</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:paddingTop">8dp</item>
         <item name="android:layout_gravity">center_vertical</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">wrap_content</item>
@@ -27,6 +28,7 @@
     <!-- Profile Section Image View -->
     <style name="profile_section_image_view" parent="">
         <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingTop">8dp</item>
         <item name="android:layout_gravity">center_vertical</item>
         <item name="android:layout_weight">0</item>
         <item name="android:layout_width">wrap_content</item>

@@ -16,76 +16,92 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
-            <LinearLayout
+            <com.google.android.material.card.MaterialCardView
                     android:layout_width="match_parent"
-                    android:layout_height="74dp"
-                    android:orientation="horizontal">
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="4dp"
+                    app:cardPreventCornerOverlap="true"
+                    app:cardMaxElevation="2dp"
+                    style="@style/ripple_effect"
+                    app:cardUseCompatPadding="true"
+                    android:elevation="16dp">
 
-                <ImageView
-                        style="@style/profile_section_image_view"
-                        android:src="@drawable/account_28"/>
-
-                <TextView
-                        android:id="@+id/user_name"
-                        style="@style/profile_section_title_view"
-                        tools:text="Pintu Kumar"/>
-
-                <TextView
-                        android:id="@+id/profile_edit"
-                        android:layout_weight="0"
-                        android:layout_width="wrap_content"
+                <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:paddingEnd="16dp"
-                        android:textSize="20sp"
-                        android:textColor="@color/md_theme_dark_primary"
-                        android:layout_gravity="center_vertical"
-                        android:text="Edit Profile"/>
-            </LinearLayout>
+                        android:orientation="vertical">
 
-            <View
-                    android:layout_width="match_parent"
-                    android:layout_height="0.5dp"
-                    android:background="@color/md_theme_dark_scrim"/>
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="74dp"
+                            android:orientation="horizontal">
 
-            <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="74dp"
-                    android:orientation="horizontal">
+                        <ImageView
+                                style="@style/profile_section_image_view"
+                                android:src="@drawable/account_28" />
 
-                <ImageView
-                        android:src="@drawable/department_28"
-                        style="@style/profile_section_image_view"/>
+                        <TextView
+                                android:id="@+id/user_name"
+                                style="@style/profile_section_title_view"
+                                tools:text="Pintu Kumar" />
 
-                <TextView
-                        android:id="@+id/user_department"
-                        style="@style/profile_section_title_view"
-                        tools:text="Packaging Technogy"/>
-            </LinearLayout>
+                        <TextView
+                                android:id="@+id/profile_edit"
+                                android:layout_weight="0"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingEnd="16dp"
+                                android:textSize="20sp"
+                                android:textColor="@color/md_theme_dark_primary"
+                                android:layout_gravity="center_vertical"
+                                android:text="Edit Profile" />
+                    </LinearLayout>
 
-            <View
-                    android:layout_width="match_parent"
-                    android:layout_height="0.5dp"
-                    android:background="@color/md_theme_dark_scrim"/>
+                    <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/md_theme_dark_scrim"/>
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="74dp"
+                            android:orientation="horizontal">
 
-            <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="74dp"
-                    android:orientation="horizontal">
+                        <ImageView
+                                android:src="@drawable/department_28"
+                                style="@style/profile_section_image_view"/>
 
-                <ImageView
-                        android:src="@drawable/semester_28"
-                        style="@style/profile_section_image_view"/>
+                        <TextView
+                                android:id="@+id/user_department"
+                                style="@style/profile_section_title_view"
+                                tools:text="Packaging Technogy"/>
 
-                <TextView
-                        android:id="@+id/user_semester"
-                        style="@style/profile_section_title_view"
-                        tools:text="4th Semester"/>
-            </LinearLayout>
+                    </LinearLayout>
+                    <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/md_theme_dark_scrim"/>
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="74dp"
+                            android:orientation="horizontal">
 
-            <View
-                    android:layout_width="match_parent"
-                    android:layout_height="0.5dp"
-                    android:background="@color/md_theme_dark_scrim"/>
+                        <ImageView
+                                android:src="@drawable/semester_28"
+                                style="@style/profile_section_image_view"/>
+
+                        <TextView
+                                android:id="@+id/user_semester"
+                                style="@style/profile_section_title_view"
+                                tools:text="4th Semester"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+
+
 
             <LinearLayout
                     android:layout_width="match_parent"

@@ -12,6 +12,7 @@ import android.view.inputmethod.InputMethodManager
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Spinner
+import android.widget.TextView
 import androidx.core.content.ContextCompat.getSystemService
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
@@ -57,6 +58,7 @@ class UserLoginScreen : Fragment() {
                     it.name
                 })
 
+
         val semesterAdapter =
             ArrayAdapter(
                 requireContext(),
@@ -65,11 +67,15 @@ class UserLoginScreen : Fragment() {
                     it.name
                 })
 
+
         val departmentSpinner = view.findViewById<Spinner>(R.id.departmentSelect)
         val semesterSpinner = view.findViewById<Spinner>(R.id.semesterSelect)
 
         departmentSpinner.adapter = departmentAdapter
+      //  val deptTextView = departmentSpinner.selectedView as TextView
+    //    deptTextView.setTextColor(resources.getColor(R.color.md_theme_dark_shadow))
         semesterSpinner.adapter = semesterAdapter
+
 
         //listener for user's interaction
         departmentSpinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {

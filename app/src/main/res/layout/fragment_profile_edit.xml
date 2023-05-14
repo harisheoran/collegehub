@@ -9,7 +9,8 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            >
 
         <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/textField"
@@ -34,37 +35,60 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                app:layout_constraintGuide_begin="126dp" />
+                android:layout_centerInParent="true"
+                app:layout_constraintGuide_begin="126dp"/>
 
 
         <Spinner
                 android:id="@+id/departmentSelect"
                 android:layout_width="324dp"
                 android:layout_height="74dp"
+                android:background="@drawable/spinner_border"
+                android:popupBackground="@color/md_theme_light_primary"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/guideline"
-                android:layout_marginTop="94dp" />
+                android:layout_marginTop="114dp"/>
 
 
         <Spinner
                 android:id="@+id/semesterSelect"
                 android:layout_width="324dp"
                 android:layout_height="74dp"
+                android:background="@drawable/spinner_border"
+
+                android:layout_centerInParent="true"
+                android:popupBackground="@color/md_theme_light_primary"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/guideline"
-                android:layout_marginTop="188dp" />
+                android:layout_marginTop="218dp" android:contentDescription="@string/chapter"/>
 
         <Button
                 android:id="@+id/edit_save"
                 android:layout_width="324dp"
                 android:layout_height="74dp"
-                android:layout_marginTop="272dp"
+                android:layout_marginTop="312dp"
                 android:text="@string/save_continue"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/guideline" />
+                app:layout_constraintTop_toTopOf="@+id/guideline"/>
+        <TextView
+                android:text="Department"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/textView"
+                app:layout_constraintTop_toTopOf="@+id/guideline"
+                android:textColor="@color/md_theme_dark_scrim"
+                app:layout_constraintBottom_toTopOf="@+id/departmentSelect"
+                app:layout_constraintStart_toStartOf="@+id/departmentSelect" android:layout_marginTop="94dp"/>
+        <TextView
+                android:text="Semester"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/textView4"
+                app:layout_constraintTop_toTopOf="@+id/textField"
+                android:textColor="@color/md_theme_dark_scrim"
+                app:layout_constraintStart_toStartOf="@+id/semesterSelect"
+                app:layout_constraintBottom_toTopOf="@+id/semesterSelect" android:layout_marginTop="192dp"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

@@ -94,6 +94,7 @@
                 <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/userNameField"
                         android:layout_width="match_parent"
+                        android:textColor="@color/md_theme_dark_shadow"
                         android:layout_height="match_parent"
                 />
 
@@ -114,6 +115,7 @@
                         android:id="@+id/departmentSelect"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
                         android:padding="8dp"/>
 
             </com.google.android.material.card.MaterialCardView>
@@ -134,6 +136,7 @@
                         android:id="@+id/semesterSelect"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
                         android:padding="8dp"/>
 
             </com.google.android.material.card.MaterialCardView>

@@ -54,8 +54,7 @@ class FirestoreViewModel : ViewModel() {
                             val chapters = it.documents.map { documnet ->
                                 val name = documnet.getString("name") ?: ""
                                 val link = documnet.getString("link") ?: ""
-                                val id = documnet.getString("id") ?: ""
-                                Chapter(name = name, link = link, id = id)
+                                Chapter(name = name, link = link)
                             }
                             _chapterList.value = chapters
                             _firestoreStatus.value = FireStoreStatus.SUCCESS

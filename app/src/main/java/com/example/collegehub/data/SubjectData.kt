@@ -25,7 +25,7 @@ object SubjectData {
                     Subject("Physics", "physics", R.drawable.homeinfo_img),
                     Subject("BEE", "bee", R.drawable.homeinfo_img),
                     Subject("Workshop", "workshop", R.drawable.homeinfo_img),
-                    Subject("Mathematics", "math", R.drawable.homeinfo_img),
+                    Subject("Mathematics", "math2", R.drawable.homeinfo_img),
                     Subject("Indian Constitution", "ic", R.drawable.homeinfo_img)
                 ),
                 // 3rd sem
