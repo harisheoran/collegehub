@@ -13,16 +13,14 @@
     <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            app:cardCornerRadius="16dp"
+            android:layout_margin="16dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
             app:cardPreventCornerOverlap="true"
+            app:cardMaxElevation="2dp"
+            style="@style/ripple_effect"
             app:cardUseCompatPadding="true"
-            app:cardMaxElevation="12dp"
-            app:cardElevation="1dp"
-            app:strokeWidth="0dp"
-            app:cardBackgroundColor="@color/md_theme_dark_tertiary"
-            style="?attr/materialCardViewElevatedStyle">
-            >
+            android:elevation="16dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -31,54 +29,50 @@
 
             <com.google.android.material.card.MaterialCardView
                     android:id="@+id/card"
-                    app:cardCornerRadius="16dp"
-                    android:layout_width="0dp"
-                    android:layout_height="194dp"
-                    app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+                    app:cardCornerRadius="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="130dp"
+                    android:layout_margin="8dp"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintHorizontal_bias="0.5"
-                    app:layout_constraintVertical_chainStyle="packed">
+                    app:layout_constraintVertical_chainStyle="packed" app:layout_constraintBottom_toBottomOf="parent">
 
-                <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
+                <ImageView
+                        android:id="@+id/subject_image"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        tools:srcCompat="@drawable/homeinfo_img"
 
-                    <!-- Media -->
-                    <ImageView
-                            android:id="@+id/subject_image"
-                            android:layout_width="344dp"
-                            android:layout_height="167dp"
-                            app:srcCompat="@drawable/homeinfo_img"
-                            android:scaleType="centerCrop"
-                            android:contentDescription="About App"/>
-                </LinearLayout>
+                        android:scaleType="centerCrop"
+                        android:contentDescription="About App"/>
+
             </com.google.android.material.card.MaterialCardView>
 
-            <LinearLayout
-                    android:layout_width="match_parent"
+            <TextView
+                    android:layout_width="0dp"
+                    android:id="@+id/subject_name"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="match_parent"
+                    tools:text="Programming  for problem solving"
+                    android:text="@{subject.name}"
+                    android:textSize="20sp"
+                    android:textAppearance="?attr/textAppearanceTitleMedium"
+                    app:layout_constraintStart_toEndOf="@+id/card"
+                    app:layout_constraintTop_toTopOf="@+id/guideline5" android:layout_marginStart="16dp"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline6"/>
+            <androidx.constraintlayout.widget.Guideline
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    app:layout_constraintGuide_percent="0.15"
+                    android:id="@+id/guideline5"/>
+            <androidx.constraintlayout.widget.Guideline
                     android:orientation="vertical"
-                    android:padding="16dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    android:id="@+id/linearLayout"
-                    app:layout_constraintTop_toBottomOf="@+id/card">
-
-                <TextView
-                        android:layout_width="wrap_content"
-                        android:id="@+id/subject_name"
-                        android:layout_gravity="center_horizontal"
-                        android:layout_height="wrap_content"
-                        tools:text="College Hub"
-                        android:text="@{subject.name}"
-                        android:textSize="20sp"
-                        android:textAppearance="?attr/textAppearanceTitleMedium"/>
-
-            </LinearLayout>
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintGuide_percent="0.95"
+                    android:id="@+id/guideline6"/>
         </androidx.constraintlayout.widget.ConstraintLayout>
     </com.google.android.material.card.MaterialCardView>
-
 
 </layout>

@@ -36,7 +36,7 @@ fun setFireStoreStatus(lottieAnim: LottieAnimationView, status: FireStoreStatus?
         FireStoreStatus.ERROR -> {
             lottieAnim.visibility = View.VISIBLE
             lottieAnim.imageAssetsFolder = "assets"
-            lottieAnim.setAnimation("not_found .json")
+            lottieAnim.setAnimation("not_found.json")
             lottieAnim.loop(true)
             lottieAnim.playAnimation()
         }

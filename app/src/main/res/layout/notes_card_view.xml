@@ -42,6 +42,7 @@
                     android:layout_weight="1"
                     android:text="@{chapter.name}"
                     tools:text="Algebra"
+                    android:textColor="@color/md_theme_dark_shadow"
                     android:textSize="20sp"
                     android:paddingStart="8dp"
                     android:layout_gravity="center_vertical" />
