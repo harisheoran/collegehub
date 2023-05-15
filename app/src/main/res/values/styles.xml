@@ -13,6 +13,15 @@
         <item name="android:background">?attr/selectableItemBackground</item>
     </style>
 
+    <!-- Profile line view -->
+    <style name="profile_view" parent="">
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:background">@color/md_theme_dark_onSurfaceVariant</item>
+    </style>
+
     <!-- Profile Section Name View -->
     <style name="profile_section_title_view" parent="">
         <item name="android:paddingStart">16dp</item>

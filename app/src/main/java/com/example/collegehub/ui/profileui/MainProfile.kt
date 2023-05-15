@@ -76,6 +76,12 @@ class MainProfile : Fragment() {
             startActivity(intent)
         }
 
+        // Report Bug
+        binding.reportBug.setOnClickListener {
+            val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://wa.me/qr/HGPKJ43PPC72G1"))
+            startActivity(intent)
+        }
+
         // About Us
         binding.aboutUs.setOnClickListener {
             val intent =

@@ -72,8 +72,8 @@ class UserLoginScreen : Fragment() {
         val semesterSpinner = view.findViewById<Spinner>(R.id.semesterSelect)
 
         departmentSpinner.adapter = departmentAdapter
-      //  val deptTextView = departmentSpinner.selectedView as TextView
-    //    deptTextView.setTextColor(resources.getColor(R.color.md_theme_dark_shadow))
+        //  val deptTextView = departmentSpinner.selectedView as TextView
+        //    deptTextView.setTextColor(resources.getColor(R.color.md_theme_dark_shadow))
         semesterSpinner.adapter = semesterAdapter
 
 

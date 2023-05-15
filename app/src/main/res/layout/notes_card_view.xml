@@ -31,7 +31,8 @@
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:padding="8dp"
-                    android:src="@drawable/pdf"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/pdfai"
                     app:civ_border_color="@color/md_theme_light_onTertiary"
                     app:civ_border_width="2dp" />
 

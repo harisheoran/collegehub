@@ -62,7 +62,7 @@
                     <View
                             android:layout_width="match_parent"
                             android:layout_height="0.5dp"
-                            android:background="@color/md_theme_dark_scrim"/>
+                            android:background="@color/md_theme_dark_onSurfaceVariant"/>
                     <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="74dp"
@@ -81,7 +81,7 @@
                     <View
                             android:layout_width="match_parent"
                             android:layout_height="0.5dp"
-                            android:background="@color/md_theme_dark_scrim"/>
+                            android:background="@color/md_theme_dark_onSurfaceVariant"/>
                     <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="74dp"
@@ -123,9 +123,7 @@
             </LinearLayout>
 
             <View
-                    android:layout_width="match_parent"
-                    android:layout_height="0.5dp"
-                    android:background="@color/md_theme_dark_outline"/>
+                    style="@style/profile_view"/>
 
             <LinearLayout
                     android:layout_width="match_parent"
@@ -150,10 +148,28 @@
             </LinearLayout>
 
             <View
+                    style="@style/profile_view"/>
+            <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="0.5dp"
-                    android:background="@color/md_theme_dark_outline"/>
+                    android:layout_height="64dp"
+                    style="@style/ripple_effect"
+                    android:id="@+id/report_bug"
+                    android:orientation="horizontal">
+                <ImageView style="@style/profile_section_image_view"
+                           android:layout_marginLeft="12dp"
+                           android:src="@drawable/bug_report_28"/>
 
+                <TextView
+                        android:text="@string/report"
+                        style="@style/profile_additional_section_text_view"/>
+
+                <ImageView
+                        android:src="@drawable/arrow_blue_24"
+                        style="@style/profile_additional_section_image_view"/>
+
+            </LinearLayout>
+            <View
+                    style="@style/profile_view"/>
             <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="64dp"
@@ -165,7 +181,6 @@
                            android:src="@drawable/aboutus_28"/>
 
                 <TextView
-
                         android:text="@string/about"
                         style="@style/profile_additional_section_text_view"/>
 
@@ -176,9 +191,7 @@
             </LinearLayout>
 
             <View
-                    android:layout_width="match_parent"
-                    android:layout_height="0.5dp"
-                    android:background="@color/md_theme_dark_outline"/>
+                    style="@style/profile_view"/>
 
             <!--<LinearLayout
                     android:layout_width="match_parent"
@@ -199,9 +212,7 @@
             </LinearLayout>-->
 
             <View
-                    android:layout_width="match_parent"
-                    android:layout_height="0.5dp"
-                    android:background="@color/md_theme_dark_outline"/>
+                    style="@style/profile_view"/>
 
             <LinearLayout
                     android:layout_width="match_parent"
@@ -221,7 +232,7 @@
                         android:layout_weight="0"
                         android:textColor="@color/md_theme_light_shadow"
                         android:layout_height="wrap_content"
-                        android:layout_marginRight="8dp"
+                        android:layout_marginRight="12dp"
                         android:layout_width="wrap_content"
                         android:textSize="14sp"
                         android:layout_gravity="center_vertical"
@@ -232,9 +243,7 @@
             </LinearLayout>
 
             <View
-                    android:layout_width="match_parent"
-                    android:layout_height="0.5dp"
-                    android:background="@color/md_theme_dark_scrim"/>
+                    style="@style/profile_view"/>
 
             <LinearLayout
                     android:layout_width="match_parent"
@@ -259,10 +268,7 @@
 
             </LinearLayout>
 
-            <View
-                    android:layout_width="match_parent"
-                    android:layout_height="0.5dp"
-                    android:background="@color/md_theme_dark_scrim"/>
+
         </LinearLayout>
     </ScrollView>
 </layout>
