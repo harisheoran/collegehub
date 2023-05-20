@@ -23,7 +23,7 @@ class GoogleAuth : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         _binding = FragmentGoogleAuthBinding.inflate(inflater, container, false)
-        binding.signInWithGoogle.setOnClickListener {
+        binding.btnSignInWithGoogle.setOnClickListener {
             createSignInIntent()
         }
         return binding.root
