@@ -1,4 +1,4 @@
-package com.example.collegehub.ui
+package com.example.collegehub.ui.notes
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.collegehub.databinding.NotesCardViewBinding
 import com.example.collegehub.model.Chapter
+import com.example.collegehub.ui.onChapterClickListener
 
 class NotesAdapter(val onChapterClick: onChapterClickListener) :
     ListAdapter<Chapter, NotesAdapter.NotesViewHolder>(DiffCallback) {

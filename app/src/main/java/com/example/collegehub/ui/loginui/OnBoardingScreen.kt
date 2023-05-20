@@ -63,7 +63,7 @@ class OnBoardingScreen : Fragment() {
                     binding.buttonNext.animation = animation
                     binding.buttonNext.text = "Finish"
                     binding.buttonNext.setOnClickListener {
-                        findNavController().navigate(R.id.action_onBoardingScreen_to_userLoginScreen2)
+                        findNavController().navigate(R.id.action_onBoardingScreen_to_googleAuth)
                     }
                 } else {
                     binding.buttonNext.text = "Next"

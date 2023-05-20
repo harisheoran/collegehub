@@ -1,4 +1,4 @@
-package com.example.collegehub.ui
+package com.example.collegehub.ui.home
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,16 +7,14 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
-import androidx.recyclerview.widget.GridLayoutManager
 import com.example.collegehub.CollegeHubApplication
 import com.example.collegehub.databinding.FragmentMainScreenBinding
 import com.example.collegehub.localdata.UserData
 import com.example.collegehub.model.Subject
+import com.example.collegehub.ui.onSubjectClickListener
 import com.example.collegehub.viewmodel.CollegeHubViewModel
 import com.example.collegehub.viewmodel.CollegeHubViewModelFactory
 import com.example.collegehub.viewmodel.FirestoreViewModel
-
-private val TAG = "SUBJECT LIST LOADING"
 
 class MainScreen : Fragment() {
     private var _binding: FragmentMainScreenBinding? = null

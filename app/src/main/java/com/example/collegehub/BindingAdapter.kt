@@ -6,8 +6,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.airbnb.lottie.LottieAnimationView
 import com.example.collegehub.model.Chapter
 import com.example.collegehub.model.Subject
-import com.example.collegehub.ui.NotesAdapter
-import com.example.collegehub.ui.SubjectsAdapter
+import com.example.collegehub.ui.notes.NotesAdapter
+import com.example.collegehub.ui.home.SubjectsAdapter
 import com.example.collegehub.viewmodel.FireStoreStatus
 
 @BindingAdapter("setData")

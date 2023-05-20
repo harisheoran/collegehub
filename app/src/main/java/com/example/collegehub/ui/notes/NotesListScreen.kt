@@ -1,18 +1,17 @@
-package com.example.collegehub.ui
+package com.example.collegehub.ui.notes
 
-import android.content.Context
-import android.net.ConnectivityManager
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.content.ContentProviderCompat.requireContext
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.example.collegehub.databinding.FragmentNotesListScreenBinding
 import com.example.collegehub.model.Chapter
+
+import com.example.collegehub.ui.onChapterClickListener
 import com.example.collegehub.viewmodel.FirestoreViewModel
 import com.example.collegehub.viewmodel.NetworkStateViewModel
 

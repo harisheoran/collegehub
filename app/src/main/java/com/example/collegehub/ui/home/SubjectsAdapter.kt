@@ -1,15 +1,13 @@
-package com.example.collegehub.ui
+package com.example.collegehub.ui.home
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import androidx.fragment.app.activityViewModels
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.collegehub.databinding.MainScreenCardViewBinding
 import com.example.collegehub.model.Subject
-import com.example.collegehub.viewmodel.FirestoreViewModel
-import org.checkerframework.checker.units.qual.m
+import com.example.collegehub.ui.onSubjectClickListener
 
 class SubjectsAdapter(private val onSubjectClickListener: onSubjectClickListener) :
     ListAdapter<Subject, SubjectsAdapter.SubjectViewModel>(DiffCallback) {
@@ -25,12 +23,12 @@ class SubjectsAdapter(private val onSubjectClickListener: onSubjectClickListener
         }
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SubjectsAdapter.SubjectViewModel {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SubjectViewModel {
         val view = SubjectViewModel(MainScreenCardViewBinding.inflate(LayoutInflater.from(parent.context)))
         return view
     }
 
-    override fun onBindViewHolder(holder: SubjectsAdapter.SubjectViewModel, position: Int) {
+    override fun onBindViewHolder(holder: SubjectViewModel, position: Int) {
         val mySubject = getItem(position)
         holder.bind(onSubjectClickListener, mySubject)
     }
