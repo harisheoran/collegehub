@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="4dp"
+                    app:cardPreventCornerOverlap="true"
+                    app:cardMaxElevation="2dp"
+                    style="@style/ripple_effect"
+                    app:cardUseCompatPadding="true"
+                    android:elevation="16dp">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="74dp"
+                            android:orientation="horizontal">
+
+                        <ImageView
+                                style="@style/profile_section_image_view"
+                                android:src="@drawable/account_28"/>
+
+                        <TextView
+                                android:id="@+id/user_name"
+                                style="@style/profile_section_title_view"
+                                tools:text="Pintu Kumar"/>
+
+                        <TextView
+                                android:id="@+id/profile_edit"
+                                android:layout_weight="0"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingEnd="16dp"
+                                android:textSize="20sp"
+                                android:textColor="@color/md_theme_dark_primary"
+                                android:layout_gravity="center_vertical"
+                                android:text="Edit Profile"/>
+                    </LinearLayout>
+
+                    <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/md_theme_dark_onSurfaceVariant"/>
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="74dp"
+                            android:orientation="horizontal">
+
+                        <ImageView
+                                android:src="@drawable/department_28"
+                                style="@style/profile_section_image_view"/>
+
+                        <TextView
+                                android:id="@+id/user_department"
+                                style="@style/profile_section_title_view"
+                                tools:text="Packaging Technogy"/>
+
+                    </LinearLayout>
+                    <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/md_theme_dark_onSurfaceVariant"/>
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="74dp"
+                            android:orientation="horizontal">
+
+                        <ImageView
+                                android:src="@drawable/semester_28"
+                                style="@style/profile_section_image_view"/>
+
+                        <TextView
+                                android:id="@+id/user_semester"
+                                style="@style/profile_section_title_view"
+                                tools:text="4th Semester"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:orientation="horizontal"
+                    style="@style/ripple_effect"
+                    android:id="@+id/contact">
+
+                <ImageView style="@style/profile_section_image_view"
+                           android:layout_marginLeft="12dp"
+                           android:src="@drawable/contact_28"/>
+
+                <TextView
+                        android:text="@string/contact"
+                        style="@style/profile_additional_section_text_view"/>
+
+                <ImageView
+                        android:src="@drawable/arrow_blue_24"
+                        style="@style/profile_additional_section_image_view"/>
+
+            </LinearLayout>
+
+            <View
+                    style="@style/profile_view"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    style="@style/ripple_effect"
+                    android:id="@+id/help_centre"
+                    android:orientation="horizontal">
+
+                <ImageView style="@style/profile_section_image_view"
+                           android:layout_marginLeft="12dp"
+                           android:src="@drawable/help_center_28"/>
+
+                <TextView
+
+                        android:text="@string/help"
+                        style="@style/profile_additional_section_text_view"/>
+
+                <ImageView
+                        android:src="@drawable/arrow_blue_24"
+                        style="@style/profile_additional_section_image_view"/>
+
+            </LinearLayout>
+
+            <View
+                    style="@style/profile_view"/>
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    style="@style/ripple_effect"
+                    android:id="@+id/report_bug"
+                    android:orientation="horizontal">
+                <ImageView style="@style/profile_section_image_view"
+                           android:layout_marginLeft="12dp"
+                           android:src="@drawable/bug_report_28"/>
+
+                <TextView
+                        android:text="@string/report"
+                        style="@style/profile_additional_section_text_view"/>
+
+                <ImageView
+                        android:src="@drawable/arrow_blue_24"
+                        style="@style/profile_additional_section_image_view"/>
+
+            </LinearLayout>
+            <View
+                    style="@style/profile_view"/>
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    style="@style/ripple_effect"
+                    android:id="@+id/about_us"
+                    android:orientation="horizontal">
+                <ImageView style="@style/profile_section_image_view"
+                           android:layout_marginLeft="12dp"
+                           android:src="@drawable/aboutus_28"/>
+
+                <TextView
+                        android:text="@string/about"
+                        style="@style/profile_additional_section_text_view"/>
+
+                <ImageView
+                        android:src="@drawable/arrow_blue_24"
+                        style="@style/profile_additional_section_image_view"/>
+
+            </LinearLayout>
+
+            <View
+                    style="@style/profile_view"/>
+
+            <!--<LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:id="@+id/privacy_policy"
+                    style="@style/ripple_effect"
+                    android:orientation="horizontal">
+
+                <TextView
+
+                        android:text="@string/policy"
+                        style="@style/profile_additional_section_text_view" />
+
+                <ImageView
+                        android:src="@drawable/arrow_blue_24"
+                        style="@style/profile_additional_section_image_view" />
+
+            </LinearLayout>-->
+
+            <View
+                    style="@style/profile_view"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    style="@style/ripple_effect"
+                    android:orientation="horizontal">
+                <ImageView style="@style/profile_section_image_view"
+                           android:layout_marginLeft="12dp"
+                           android:src="@drawable/contact_28"/>
+
+                <TextView
+                        android:text="@string/app_version"
+                        style="@style/profile_additional_section_text_view"/>
+
+                <TextView
+                        android:text="pre-alpha"
+                        android:layout_weight="0"
+                        android:textColor="@color/md_theme_light_shadow"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="12dp"
+                        android:layout_width="wrap_content"
+                        android:textSize="14sp"
+                        android:layout_gravity="center_vertical"
+                        android:paddingEnd="8dp"
+                />
+
+
+            </LinearLayout>
+
+            <View
+                    style="@style/profile_view"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="74dp"
+                    style="@style/ripple_effect"
+                    android:id="@+id/update"
+                    android:orientation="horizontal">
+
+                <ImageView
+                        android:src="@drawable/update_28"
+                        android:layout_marginLeft="12dp"
+                        style="@style/profile_section_image_view"/>
+
+                <TextView
+
+                        android:text="@string/update_app"
+                        style="@style/profile_additional_section_text_view"/>
+
+                <ImageView
+                        android:src="@drawable/arrow_blue_24"
+                        style="@style/profile_additional_section_image_view"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</layout>

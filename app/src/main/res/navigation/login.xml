@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/login"
+            app:startDestination="@id/onBoardingScreen">
+
+    <fragment
+            android:id="@+id/onBoardingScreen"
+            android:name="com.example.collegehub.ui.loginui.OnBoardingScreen"
+            android:label="fragment_on_boarding_screen"
+            tools:layout="@layout/fragment_on_boarding_screen">
+        <action android:id="@+id/action_onBoardingScreen_to_googleAuth" app:destination="@id/googleAuth"
+                app:popUpTo="@id/onBoardingScreen"/>
+    </fragment>
+    <fragment android:id="@+id/googleAuth" android:name="com.example.collegehub.ui.loginui.GoogleAuth"
+              android:label="GoogleAuth">
+        <action android:id="@+id/action_googleAuth_to_userLoginScreen" app:destination="@id/userLoginScreen"
+                app:popUpTo="@id/googleAuth"/>
+    </fragment>
+    <fragment
+            android:id="@+id/userLoginScreen"
+            android:name="com.example.collegehub.ui.loginui.UserLoginScreen"
+            android:label="UserLoginScreen"/>
+</navigation>
