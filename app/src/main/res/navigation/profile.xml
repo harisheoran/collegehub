@@ -7,7 +7,7 @@
 
     <fragment
             android:id="@+id/mainProfile"
-            android:name="com.example.collegehub.ui.profileui.MainProfile"
+            android:name="com.sparrowbit.collegehub.ui.profileui.MainProfile"
             android:label="@string/profile">
         <action
                 android:id="@+id/action_mainProfile_to_profileEdit2"
@@ -17,7 +17,7 @@
 
     <fragment
             android:id="@+id/profileEdit"
-            android:name="com.example.collegehub.ui.profileui.ProfileEdit"
+            android:name="com.sparrowbit.collegehub.ui.profileui.ProfileEdit"
             android:label="@string/edit_profile"
             tools:layout="@layout/fragment_profile_edit">
         <argument android:name="id"

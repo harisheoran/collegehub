@@ -6,7 +6,7 @@
     <data>
         <variable
                 name="subject"
-                type="com.example.collegehub.model.Subject"
+                type="com.sparrowbit.collegehub.model.Subject"
         />
     </data>
 

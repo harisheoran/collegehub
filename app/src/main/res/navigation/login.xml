@@ -7,19 +7,19 @@
 
     <fragment
             android:id="@+id/onBoardingScreen"
-            android:name="com.example.collegehub.ui.loginui.OnBoardingScreen"
+            android:name="com.sparrowbit.collegehub.ui.loginui.OnBoardingScreen"
             android:label="fragment_on_boarding_screen"
             tools:layout="@layout/fragment_on_boarding_screen">
         <action android:id="@+id/action_onBoardingScreen_to_googleAuth" app:destination="@id/googleAuth"
                 app:popUpTo="@id/onBoardingScreen"/>
     </fragment>
-    <fragment android:id="@+id/googleAuth" android:name="com.example.collegehub.ui.loginui.GoogleAuth"
+    <fragment android:id="@+id/googleAuth" android:name="com.sparrowbit.collegehub.ui.loginui.GoogleAuth"
               android:label="GoogleAuth">
         <action android:id="@+id/action_googleAuth_to_userLoginScreen" app:destination="@id/userLoginScreen"
                 app:popUpTo="@id/googleAuth"/>
     </fragment>
     <fragment
             android:id="@+id/userLoginScreen"
-            android:name="com.example.collegehub.ui.loginui.UserLoginScreen"
+            android:name="com.sparrowbit.collegehub.ui.loginui.UserLoginScreen"
             android:label="UserLoginScreen"/>
 </navigation>

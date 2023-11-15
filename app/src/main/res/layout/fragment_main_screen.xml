@@ -7,7 +7,7 @@
 
         <variable
                 name="viewmodel"
-                type="com.example.collegehub.viewmodel.CollegeHubViewModel"/>
+                type="com.sparrowbit.collegehub.viewmodel.CollegeHubViewModel"/>
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

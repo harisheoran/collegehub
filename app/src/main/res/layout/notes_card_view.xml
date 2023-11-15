@@ -7,7 +7,7 @@
 
         <variable
                 name="chapter"
-                type="com.example.collegehub.model.Chapter" />
+                type="com.sparrowbit.collegehub.model.Chapter" />
     </data>
 
     <com.google.android.material.card.MaterialCardView

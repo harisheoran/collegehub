@@ -9,14 +9,14 @@ plugins {
 }
 
 android {
-    namespace 'com.example.collegehub'
+    namespace 'com.sparrowbit.collegehub'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.collegehub"
+        applicationId "com.sparrowbit.collegehub"
         minSdk 24
-        targetSdk 31
-        versionCode 1
+        targetSdk 33
+        versionCode 3
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"

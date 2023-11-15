@@ -14,11 +14,48 @@
       },
       "oauth_client": [
         {
-          "client_id": "255483595647-i6hle4p2p5okkhhuo74hodjadhl4l5qn.apps.googleusercontent.com",
+          "client_id": "255483595647-h2a3sh8n226us53uiuj9ebsqupktt2t4.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.example.collegehub",
-            "certificate_hash": "990be4170e9f1486822f11472244da2159ad22f6"
+            "certificate_hash": "e26a96f7ff03e008bcf06c29b70a97b434106a43"
+          }
+        },
+        {
+          "client_id": "255483595647-mvqpgkh3e5n8hiqh35nf7er1ki17l5no.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEVpNBEvbt8vSlUQ_zn4T1fX_4c-Gpd5k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "255483595647-1bgd0g21uqm54718b0ci48sg60ifm8k6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:255483595647:android:a9641bf8ebc9500dc5284a",
+        "android_client_info": {
+          "package_name": "com.sparrowbit.collegehub"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "255483595647-ep88035logb93kvfgh77vrii293tcu6l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sparrowbit.collegehub",
+            "certificate_hash": "e26a96f7ff03e008bcf06c29b70a97b434106a43"
           }
         },
         {

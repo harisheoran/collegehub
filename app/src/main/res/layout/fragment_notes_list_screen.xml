@@ -7,7 +7,7 @@
 
         <variable
                 name="viewModel"
-                type="com.example.collegehub.viewmodel.FirestoreViewModel" />
+                type="com.sparrowbit.collegehub.viewmodel.FirestoreViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
